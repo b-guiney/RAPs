@@ -84,11 +84,44 @@
           </div>
           <div id="page-wrapper">
               <div class="row">
-                <div class="col-xs-12">
-                  <h1 class="page-header">User Preferences</h1>
-                </div>
-
+                  <div class="col-xs-12">
+                      <h1 class="page-header">User Preferences</h1>
+                  </div>
+                  <div class="row">
+                      <div class="col-xs-4">
+                          <div class="panel-body">
+                              <form role="form">
+                                  <fieldset>
+                                      <p><u>Reminder Settings</u></p>
+                                          <input type="checkbox" name="reminderSettings" value="never">  Never<br>
+                                          <input type="checkbox" name="reminderSettings" value="rarely">  Rarely<br>
+                                          <input type="checkbox" name="reminderSettings" value="frequently">  Frequently<br>
+                                      <br>
+                                      <p><u>Change Password</u></p>
+                                      <p>Old Password</p>
+                                      <div class="form-group">
+                                          <input class="form-control" placeholder="" name="oldPass" type="password" value="">
+                                      </div>
+                                      <p>New Password</p>
+                                      <div class="form-group">
+                                          <input class="form-control" placeholder="" name="newPass" type="password" value="">
+                                      </div>
+                                      <p>Confirm New Password</p>
+                                      <div class="form-group">
+                                          <input class="form-control" placeholder="" name="confirmNewPass" type="password" value="">
+                                      </div>
+                                      <!-- Change this to a button or input when using this as a form -->
+                                      <a href="homepage.html" class="btn btn-lg btn-success btn-block">Submit</a>
+                                  </fieldset>
+                              </form>
+                          </div>
+                      </div>
+                      <!-- close col-xs-4 -->
+                  </div>
+                  <!-- close row -->
               </div>
+              <!-- close row -->
+          </div>
           <!-- /.navbar-static-side -->
       </nav>
       <!-- Bootstrap Core CSS -->
