@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Duty Logs</title>
+  <title>Create New Duty Log</title>
 
 
   </head>
@@ -49,7 +49,6 @@
     <div class="navbar-default sidebar" role="navigation">
               <div class="sidebar-nav navbar-collapse">
                   <ul class="nav" id="side-menu">
-                      
                       <li>
                           <a href="homepage.html"><i class="fa fa-home fa-fw"></i> Homepage</a>
                       </li>
@@ -85,17 +84,40 @@
           <div id="page-wrapper">
               <div class="row">
                   <div class="col-xs-12">
-                      <h1 class="page-header">Duty Logs</h1>
+                      <h1 class="page-header">Create New Duty Log</h1>
                   </div>
                   <div class="row">
                       <div class="col-xs-4">
                           <div class="panel-body">
-                              <p>
-                                  <a href="submitteddutylogs.html">View/edit submitted duty logs</a>
-                              </p>
-                              <p>
-                                  <a href="newdutylog.html">Create new duty log</a>
-                              </p>
+                              <form role="form">
+                                  <fieldset>
+                                      <p>Security</p>
+                                      <div class="form-group">
+                                          <input class="form-control" placeholder="e.g., John Smith" name="security" type="email" autofocus>
+                                      </div>
+                                      <p>Time of 1st Round</p>
+                                      <div class="form-group">
+                                          <input class="form-control" placeholder="e.g., 8:30 PM" name="time1a" type="email" autofocus>
+                                          <br><p> to </p>
+                                          <input class="form-control" placeholder="e.g., 9:00 PM" name="time1b" type="email" autofocus>
+                                      </div>
+                                      <p>Time of 2nd Round</p>
+                                      <div class="form-group">
+                                          <input class="form-control" placeholder="e.g., 11:00 PM" name="time2a" type="email" autofocus>
+                                          <br><p> to </p>
+                                          <input class="form-control" placeholder="e.g., 11:20 PM" name="time2b" type="email" autofocus>
+                                      </div>
+                                      <p>Time of 3rd Round</p>
+                                      <div class="form-group">
+                                          <input class="form-control" placeholder="e.g., 1:45 AM" name="time3a" type="email" autofocus>
+                                          <br><p> to </p>
+                                          <input class="form-control" placeholder="e.g., 2:05 AM" name="time3b" type="email" autofocus>
+                                      </div>
+                                      <br>
+                                      <!-- Change this to a button or input when using this as a form -->
+                                      <a href="homepage.html" class="btn btn-lg btn-success btn-block">Submit</a>
+                                  </fieldset>
+                              </form>
                           </div>
                       </div>
                       <!-- close col-xs-4 -->
