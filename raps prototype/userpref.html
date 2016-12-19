@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Create New Duty Log</title>
+  <title>User Preferences</title>
 
 
   </head>
@@ -27,7 +27,7 @@
                   <a class="navbar-brand" href="homepage.html">RAPs</a>
               </div>
               <ul class="nav navbar-top-links navbar-right">
-                <a href="login.html" class="btn btn-default">Log Out</a>
+                <center><a href="login.html" class="btn btn-default">Log Out</a><center>
               </ul>
 
     <div class="navbar-default sidebar" role="navigation">
@@ -55,44 +55,38 @@
 
               </div>
               <!-- /.sidebar-collapse -->
-          </div>
-          </nav>
+        </div>
+        <!-- /.navbar-static-side -->
+      </nav>
+      <!-- Bootstrap Core CSS -->
+
           <div id="page-wrapper">
               <div class="row">
                   <div class="col-xs-12">
-                      <h1 class="page-header">Create New Duty Log</h1>
+                      <h1 class="page-header">User Preferences</h1>
                   </div>
                   <div class="row">
                       <div class="col-xs-4">
                           <div class="panel-body">
                               <form role="form">
                                   <fieldset>
-                                      <p>Security</p>
-                                      <div class="form-group">
-                                          <input class="form-control" placeholder="e.g., John Smith" name="security" type="email" autofocus>
-                                      </div>
-                                      <p>Time of 1st Round</p>
-                                      <div class="form-group">
-                                          <input class="form-control" placeholder="e.g., 8:30 PM" name="time1a" type="email" autofocus>
-                                          <br><p> to </p>
-                                          <input class="form-control" placeholder="e.g., 9:00 PM" name="time1b" type="email" autofocus>
-                                      </div>
-                                      <p>Time of 2nd Round</p>
-                                      <div class="form-group">
-                                          <input class="form-control" placeholder="e.g., 11:00 PM" name="time2a" type="email" autofocus>
-                                          <br><p> to </p>
-                                          <input class="form-control" placeholder="e.g., 11:20 PM" name="time2b" type="email" autofocus>
-                                      </div>
-                                      <p>Time of 3rd Round</p>
-                                      <div class="form-group">
-                                          <input class="form-control" placeholder="e.g., 1:45 AM" name="time3a" type="email" autofocus>
-                                          <br><p> to </p>
-                                          <input class="form-control" placeholder="e.g., 2:05 AM" name="time3b" type="email" autofocus>
-                                      </div>
+                                      <p><u>Reminder Settings</u></p>
+                                          <input type="checkbox" name="reminderSettings" value="never">  Never<br>
+                                          <input type="checkbox" name="reminderSettings" value="rarely">  Rarely<br>
+                                          <input type="checkbox" name="reminderSettings" value="frequently">  Frequently<br>
                                       <br>
+                                      <p><u>Change Password</u></p>
+                                      <p>Old Password</p>
                                       <div class="form-group">
-                                          <p> Brief summary of any incidents </p>
-                                          <textarea class="form-control" rows="3"placeholder="e.g., Name, location, brief description of what happened."></textarea>
+                                          <input class="form-control" placeholder="" name="oldPass" type="password" value="">
+                                      </div>
+                                      <p>New Password</p>
+                                      <div class="form-group">
+                                          <input class="form-control" placeholder="" name="newPass" type="password" value="">
+                                      </div>
+                                      <p>Confirm New Password</p>
+                                      <div class="form-group">
+                                          <input class="form-control" placeholder="" name="confirmNewPass" type="password" value="">
                                       </div>
                                       <br>
                                       <!-- Change this to a button or input when using this as a form -->
@@ -106,10 +100,7 @@
                   <!-- close row -->
               </div>
               <!-- close row -->
-          </div>
-          <!-- /.navbar-static-side -->
-
-      <!-- Bootstrap Core CSS -->
+            </div>
       <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
       <!-- MetisMenu CSS -->
